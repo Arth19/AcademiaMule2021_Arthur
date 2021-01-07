@@ -1,0 +1,266 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+           "description": "Id da roupa"
+        },
+        "name": {
+          "type": "string",
+           "description": "Nome da roupa"
+        },
+        "marca": {
+          "type": "string",
+           "description": "Marca da roupa"
+        },
+        "cor": {
+          "type": "string",
+           "description": "Cor da roupa"
+        },
+        "tamanho": {
+          "type": "string",
+           "description": "Tamanho da roupa"
+        },
+        "dataEfetivado": {
+          "type": "string",
+           "description": "Data de efetivação na loja"
+        },
+        "quantidade": {
+          "type": "integer",
+           "description": "Quantidade da roupa"
+        },
+        "preco": {
+          "type": "number",
+           "description": "Preço da roupa"
+        },
+        "outrasCores": {
+          "type": "boolean",
+           "description": "Outras cores da roupa"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "marca",
+        "cor",
+        "tamanho",
+        "dataEfetivado",
+        "quantidade",
+        "preco",
+        "outrasCores"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+           "description": "Id da roupa"
+        },
+        "name": {
+          "type": "string",
+          "description": "Nome da roupa"
+        },
+        "marca": {
+          "type": "string",
+           "description": "Marca da roupa"
+        },
+        "cor": {
+          "type": "string",
+           "description": "Cor da roupa"
+        },
+        "tamanho": {
+          "type": "string",
+           "description": "Tamanho da roupa"
+        },
+        "dataEfetivado": {
+          "type": "string",
+           "description": "Data de efetivação na loja"
+        },
+        "quantidade": {
+          "type": "integer",
+           "description": "Quantidade da roupa"
+        },
+        "preco": {
+          "type": "number",
+           "description": "Preço da roupa"
+        },
+        "outrasCores": {
+          "type": "boolean",
+           "description": "Outras cores da roupa"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "marca",
+        "cor",
+        "tamanho",
+        "dataEfetivado",
+        "quantidade",
+        "preco",
+        "outrasCores"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+           "description": "Id da roupa"
+        },
+        "name": {
+          "type": "string",
+          "description": "Nome da roupa"
+        },
+        "marca": {
+          "type": "string",
+           "description": "Marca da roupa"
+        },
+        "cor": {
+          "type": "string",
+           "description": "Cor da roupa"
+        },
+        "tamanho": {
+          "type": "string",
+           "description": "Tamanho da roupa"
+        },
+        "dataEfetivado": {
+          "type": "string",
+           "description": "Data de efetivação na loja"
+        },
+        "quantidade": {
+          "type": "integer",
+           "description": "Quantidade da roupa"
+        },
+        "preco": {
+          "type": "number",
+           "description": "Preço da roupa"
+        },
+        "outrasCores": {
+          "type": "boolean",
+           "description": "Outras cores da roupa"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "marca",
+        "cor",
+        "tamanho",
+        "dataEfetivado",
+        "quantidade",
+        "preco",
+        "outrasCores"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+           "description": "Id da roupa"
+        },
+        "name": {
+          "type": "string",
+          "description": "Nome da roupa"
+        },
+        "marca": {
+          "type": "string",
+           "description": "Marca da roupa"
+        },
+        "cor": {
+          "type": "string",
+           "description": "Cor da roupa"
+        },
+        "tamanho": {
+          "type": "string",
+           "description": "Tamanho da roupa"
+        },
+        "dataEfetivado": {
+          "type": "string",
+           "description": "Data de efetivação na loja"
+        },
+        "quantidade": {
+          "type": "integer",
+           "description": "Quantidade da roupa"
+        },
+        "preco": {
+          "type": "number",
+           "description": "Preço da roupa"
+        },
+        "outrasCores": {
+          "type": "boolean",
+           "description": "Outras cores da roupa"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "marca",
+        "cor",
+        "tamanho",
+        "dataEfetivado",
+        "quantidade",
+        "preco",
+        "outrasCores"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+           "description": "Id da roupa"
+        },
+        "name": {
+          "type": "string",
+          "description": "Nome da roupa"
+        },
+        "marca": {
+          "type": "string",
+           "description": "Marca da roupa"
+        },
+        "cor": {
+          "type": "string",
+           "description": "Cor da roupa"
+        },
+        "tamanho": {
+          "type": "string",
+           "description": "Tamanho da roupa"
+        },
+        "dataEfetivado": {
+          "type": "string",
+           "description": "Data de efetivação na loja"
+        },
+        "quantidade": {
+          "type": "integer",
+           "description": "Quantidade da roupa"
+        },
+        "preco": {
+          "type": "number",
+           "description": "Preço da roupa"
+        },
+        "outrasCores": {
+          "type": "boolean",
+           "description": "Outras cores da roupa"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "marca",
+        "cor",
+        "tamanho",
+        "dataEfetivado",
+        "quantidade",
+        "preco",
+        "outrasCores"
+      ]
+    }
+  ]
+}

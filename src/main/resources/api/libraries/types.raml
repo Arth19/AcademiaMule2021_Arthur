@@ -1,0 +1,49 @@
+#%RAML 1.0 Library
+usage: Types MULESOFT ACADEMIA API
+
+types:
+  ErrorMessageDefinition:
+    type:  !include ../schemas/errorResponse.json
+ 
+ #MAPEAMENTO CAMPOS STATUS DA API
+  statusReturn: 
+   type: !include ../schemas/status.json
+   
+
+ # MAPEAMENTO CAMPOS CRIAÇÃO DE ROUPA 
+ # REQUEST
+  
+  CreateClothesRequest:
+    type: !include ../schemas/createClothesRequest.json
+
+ # RESPONSE
+
+  CreateClothesResponse:
+    type: !include ../schemas/createClothesResponse.json
+
+
+ # MAPEAMENTO CAMPOS BUSCAR TODAS AS ROUPAS
+ # RESPONSE
+
+  QueryAllClothesType:
+    type: !include ../schemas/queryAllClothesResponse.json
+
+ # MAPEAMENTO CAMPOS BUSCAR ROUPA ESPECÍFICA
+ # RESPONSE
+
+  QueryClothesResponse:
+    type: !include ../schemas/queryClothesResponse.json 
+
+ # MAPEAMENTO CAMPOS ATUALIZAÇÃO DE ROUPA 
+ # REQUEST
+ 
+  UpdateClothesRequest:
+    type: !include ../schemas/updateClothesRequest.json 
+
+ # RESPONSE
+
+
+  UpdateClothesResponse:
+   type: !include ../schemas/updateClothesResponse.json 
+
+

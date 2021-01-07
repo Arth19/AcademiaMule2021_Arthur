@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": ["string","null"]
+    },
+    "processor": {
+      "type": ["string","null"]
+    },
+    "errors": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": ["string","null"]
+            },
+            "message": {
+              "type": ["string","null"]
+            }
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": ["string","null"]
+            },
+            "message": {
+              "type": ["string","null"]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

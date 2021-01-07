@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "marca": {
+      "type": "string"
+    },
+    "cor": {
+      "type": "string"
+    },
+    "tamanho": {
+      "type": "string"
+    },
+    "dataEfetivado": {
+      "type": "string"
+    },
+    "quantidade": {
+      "type": "integer"
+    },
+    "preco": {
+      "type": "number"
+    },
+    "outrasCores": {
+      "type": "boolean"
+    },
+    "matricula": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "marca",
+    "cor",
+    "tamanho",
+    "dataEfetivado",
+    "quantidade",
+    "preco",
+    "outrasCores",
+    "matricula"
+  ]
+}

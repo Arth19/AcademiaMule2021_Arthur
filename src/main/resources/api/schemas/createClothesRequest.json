@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome da roupa"
+    },
+    "marca": {
+      "type": "string",
+      "description": "Marca da roupa"
+    },
+    "cor": {
+      "type": "string",
+      "description": "Cor da roupa"
+    },
+    "tamanho": {
+      "type": "string",
+      "enum":["PP","P","M","G","GG","XG"],
+      "description": "Tamanho da roupa"
+    },
+    "dataEfetivado": {
+      "type": "string",
+      "description": "Data efetivada na loja"
+    },
+    "quantidade": {
+      "type": "integer",
+      "description": "Quantidade da roupa"
+    },
+    "preco": {
+      "type": "number",
+      "description": "Preço da roupa"
+    },
+    "outrasCores": {
+      "type": "boolean",
+      "description": "Chave única do registro (uuid)"
+    }
+  },
+  "required": [
+    "name",
+    "marca",
+    "cor",
+    "tamanho",
+    "dataEfetivado",
+    "preco",
+    "outrasCores"
+  ]
+}

@@ -1,0 +1,83 @@
+#%RAML 1.0 Library
+usage: MULESOFT ACADEMIA RAML resource types
+
+uses: 
+  types: types.raml
+
+resourceTypes: 
+  collection:
+    description: Collection of <<resourcePathName>>.
+    
+    get?:
+      description: Get a list of <<resourcePathName>>.
+      responses:
+        200:
+          body:
+            application/json:
+              type: <<typeCollection>>
+              example: <<exampleCollection>>
+        400: &400-error
+          body:
+            application/json:
+              type: types.ErrorMessageDefinition
+              example: !include ../examples/error-400.json
+        401: &401-error
+          body:
+            application/json:
+              type: types.ErrorMessageDefinition
+              example: !include ../examples/error-401.json
+        403: &403-error
+          body:
+            application/json:
+              type: types.ErrorMessageDefinition
+              example: !include ../examples/error-403.json
+        404: &404-error
+          body:
+            application/json:
+              type: types.ErrorMessageDefinition
+              example: !include ../examples/error-404.json
+        500: &500-error
+          body:
+            application/json:
+              type: types.ErrorMessageDefinition
+              example: !include ../examples/error-500.json
+    post?:
+      description: Create a new <<resourcePathName|!singularize>> record.
+      body: &body-request-item
+        application/json:
+              type: <<postRequest>>
+              example: <<examplePostRequestCollection>>
+      responses:
+        200: &body-response-item
+          body:
+            application/json:
+              type: <<PostResponse>>
+              example: <<examplePostResponseCollection>>
+              
+        400: &400-error
+          body:
+            application/json:
+              type: types.ErrorMessageDefinition
+              example: !include ../examples/error-400.json
+        401: &401-error
+          body:
+            application/json:
+              type: types.ErrorMessageDefinition
+              example: !include ../examples/error-401.json
+        403: &403-error
+          body:
+            application/json:
+              type: types.ErrorMessageDefinition
+              example: !include ../examples/error-403.json
+        404: &404-error
+          body:
+            application/json:
+              type: types.ErrorMessageDefinition
+              example: !include ../examples/error-404.json
+        500: &500-error
+          body:
+            application/json:
+              type: types.ErrorMessageDefinition
+              example: !include ../examples/error-500.json
+       
+    

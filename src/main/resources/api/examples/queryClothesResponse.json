@@ -1,0 +1,11 @@
+{
+    "id":"bad5536cdf",
+    "name": "Camisa do Homem de Ferro",
+    "marca": "Calvin Klein",
+    "cor": "Amarela",
+    "tamanho": "G",
+    "dataEfetivado": "15/12/2020",
+    "quantidade": 200,
+    "preco": 33.5,
+    "outrasCores": false
+  }

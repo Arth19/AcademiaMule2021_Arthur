@@ -1,0 +1,93 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/6c553656-d221-4bfc-b6ae-6f3919a8dfc9/api/${version} # 
+title: MULESOFT ACADEMIA API
+version: 1.0
+
+uses:
+  types: libraries/types.raml
+  resourceTypes: libraries/resourceTypes.raml
+  traits: libraries/traits.raml
+
+/status:
+  description: The default API test resource
+  type:
+     resourceTypes.collection:
+      typeCollection: types.statusReturn
+      exampleCollection: !include examples/status.json
+
+  get:
+    description: Check if the api resource is available.
+    responses:
+      200:
+
+/query/allClothes:
+  description: Fluxo voltado para busca de todos os registros de roupa.
+  type:
+     resourceTypes.collection:
+      typeCollection: types.QueryAllClothesType
+      exampleCollection: !include examples/queryAllClothes.json
+
+  get:
+    is: [ traits.client-id-required]
+    description: Versão get para a interface de busca de todos os registros de roupa.
+    
+
+/query/clothes:
+  description: Fluxo voltado para busca de registro específico de roupa.
+  type:
+     resourceTypes.collection:
+      typeCollection: types.QueryClothesResponse
+      exampleCollection: !include examples/queryClothesResponse.json
+
+  get:
+    is: [ traits.client-id-required,traits.query-clothes-parameters-required]
+    description: Versão get para a interface de busca de registro específico de roupa.
+    
+/create/clothes:
+  description: Fluxo voltado para criar registros de roupa.
+  type:
+    resourceTypes.collection:
+      postRequest: types.CreateClothesRequest
+      examplePostRequestCollection: !include examples/createClothesRequest.json
+      PostResponse: types.CreateClothesResponse
+      examplePostResponseCollection: !include examples/createClothesResponse.json
+      
+  post:
+    
+    description: Versão post para a interface de criação de roupa.
+    is: [ traits.client-id-required]
+
+/update/clothes:
+  description: Fluxo voltado para atualizar registro específico de roupa.
+  type:
+    resourceTypes.collection:
+      postRequest: types.UpdateClothesRequest
+      examplePostRequestCollection: !include examples/updateClothesRequest.json
+      PostResponse: types.UpdateClothesResponse
+      examplePostResponseCollection: !include examples/updateClothesResponse.json
+      
+  post:
+    
+    description: Versão post para a interface de atualização de roupa.
+    is: [ traits.client-id-required]
+
+/delete/clothes:
+  description: Fluxo voltado para remover o registro específico de roupa.
+  
+  delete:
+    is: [ traits.client-id-required,traits.delete-clothes-parameters-required]
+    description: Versão delete para a interface de remoção de registro específico de roupa.  
+    responses:
+      200:
+       body:
+        application/json:
+          example: !include examples/deleteClothesResponse.json
+      
+
+
+  
+
+
+
+         
+

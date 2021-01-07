@@ -1,0 +1,31 @@
+#%RAML 1.0 Library
+usage: All common traits
+
+traits:
+  client-id-required:
+    headers:
+      client_id:
+        type: string
+      client_secret:
+        type: string
+
+# PARÂMETROS DE CONSULTA PARA REGISTRO ESPECÍFICO DE ROUPA
+  query-clothes-parameters-required:
+    queryParameters:
+      name:
+        type: string
+        required: true
+        example: "Camisa do Homem Aranha"          
+      id:
+        type: string
+        required: false
+        example: "1223141412451"
+
+# PARÂMETROS PARA DELETAR REGISTRO ESPECÍFICO DE ROUPA
+  delete-clothes-parameters-required:
+    queryParameters:        
+      id:
+        type: string
+        required: true
+        example: "1223141412451"        
+ 

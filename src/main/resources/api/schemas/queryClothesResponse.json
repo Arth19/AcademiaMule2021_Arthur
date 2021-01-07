@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "id da roupa"
+    },
+    "name": {
+      "type": "string",
+      "description": "name da roupa"
+    },
+    "marca": {
+      "type": "string",
+      "description": "cor da roupa"
+    },
+    "cor": {
+      "type": "string",
+      "description": "cor da roupa"
+    },
+    "tamanho": {
+      "type": "string",
+      "description": "tamanho da roupa"
+    },
+    "dataEfetivado": {
+      "type": "string",
+      "description": "dataEfetivado da roupa"
+    },
+    "quantidade": {
+      "type": "integer",
+      "description": "quantidade da roupa"
+    },
+    "preco": {
+      "type": "number",
+      "description": "preco da roupa"
+    },
+    "outrasCores": {
+      "type": "boolean",
+      "description": "outrasCores da roupa"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "marca",
+    "cor",
+    "tamanho",
+    "dataEfetivado",
+    "quantidade",
+    "preco",
+    "outrasCores"
+  ]
+}

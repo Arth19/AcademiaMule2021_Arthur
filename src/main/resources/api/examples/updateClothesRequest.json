@@ -1,0 +1,11 @@
+{
+"id":"1232141414",
+"name": "Camisa do Capitão America",
+"marca": "Calvin Klein",              
+"cor": "Vermelho",  
+"tamanho": "P",                    
+"dataEfetivado": "15/12/2020",      
+"quantidade": 200,        
+"preco": 23.50,                     
+"outrasCores": true
+}
